@@ -1,0 +1,18 @@
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Hatch</_name>
+  <id>noid</id>
+  <dependency type="executable" location="extensions">hatch.py</dependency>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+  <param name="slope" min="-89.9" max="89.9" precision="1" type="float" _gui-text="Slope:">45.0</param>
+  <param name="width" min="0.5" max="500.0" precision="1" type="float" _gui-text="Width:">20.0</param>
+  <param name="offset" min="0.0" max="500.0" precision="2" type="float" _gui-text="Offset:">0.01</param>
+  <effect>
+    <object-type>path</object-type>
+    <effects-menu>
+      <submenu _name="Drawall"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">hatch.py</command>
+  </script>
+</inkscape-extension>
